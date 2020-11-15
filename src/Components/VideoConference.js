@@ -26,7 +26,11 @@ const VideoConference = () => {
     }
 
     const _jitsi = new window.JitsiMeetExternalAPI('meet.jit.si', {
-      parentNode: document.getElementById(jitsiContainerId)
+      roomName: 'i86o8wn7eTQDiJyuZUSy9pwwPc6oQb5llG9Tvhz11q6iZMUBwCzmQQLDlfwEWimQDeszGX2fHCA43lDgfbvwz3MGk9zWhjvsuRVL3N1iXBnWx7XI91mvZmxM',
+      parentNode: document.getElementById(jitsiContainerId),
+      userInfo: {
+        displayName: 'John Doe'
+      }
     });
     //Interact with WebFrame API:
 
