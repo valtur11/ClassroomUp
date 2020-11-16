@@ -41,8 +41,8 @@ function Classroom () {
           console.log('Uploaded a blob or file!');
         });
 
-        /* const player = new Audio(URL.createObjectURL(file));
-        player.play(); */
+        const player = new Audio(URL.createObjectURL(file));
+        player.play();
 
       }).catch((e) => {
         alert('We could not retrieve your message');
@@ -53,7 +53,7 @@ function Classroom () {
   const [isRecording, setRecordingState] = useState(false);
   useEffect(() => {
     startRecording();
-    setTimeout(stopRecording, 6000); //lets 60 secs
+    setTimeout(stopRecording, (2 * 60000)); //2 minutes
   }, []);
 
   return (
