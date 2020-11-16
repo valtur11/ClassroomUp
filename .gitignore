@@ -11,8 +11,10 @@
 # production
 /build
 
-#firebase
+# firebase
 .firebase
+# vs
+.vs
 
 # misc
 .DS_Store
