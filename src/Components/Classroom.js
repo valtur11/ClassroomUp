@@ -23,15 +23,26 @@ function Classroom () {
     recorder
       .stop()
       .getMp3().then(([buffer, blob]) => {
+        // Create a root reference
+        // eslint-disable-next-line no-undef
+        const storageRef = (firebase) ? firebase.storage().ref() : undefined;
+        // Create a reference
+        const filename = `teacher-speech_${Date.now()}.mp3`;
+        const ref = storageRef.child(filename);
+
         // do what ever you want with buffer and blob
         // Example: Create a mp3 file and play
-        const file = new File(buffer, 'me-at-thevoice.mp3', {
+        const file = new File(buffer, filename, {
           type: blob.type,
           lastModified: Date.now()
         });
 
-        const player = new Audio(URL.createObjectURL(file));
-        player.play();
+        ref.put(file).then(function() {
+          console.log('Uploaded a blob or file!');
+        });
+
+        /* const player = new Audio(URL.createObjectURL(file));
+        player.play(); */
 
       }).catch((e) => {
         alert('We could not retrieve your message');
@@ -61,6 +72,9 @@ function Classroom () {
         </li>
         <li className ='nav-item'>
           <button className = 'btn btn-primary' onClick={stopRecording}>Stop recording</button>
+        </li>
+        <li className ='nav-item'>
+          <h1> Profile name: John Doe </h1>
         </li>
       </ul>
       <VideConference/>
