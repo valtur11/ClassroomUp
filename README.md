@@ -11,7 +11,7 @@ Classroom UP was built to resolve some major issues in remote learning, especial
 
 Challenges we ran into
 
-Other than lack of experience with github for one of our team member, meeting up/starting so late, and Working in different time zones, We didn't really have a major coding challenge.
+Some non-code Challenges that we had was/were lack of experience with github for one of our team member, meeting up/starting so late, and Working in different time zones. The biggest coding issue that we had was that we were unable to incorporate our speech to text function in.
 
 Technologies we used
 
