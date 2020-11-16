@@ -1,3 +1,11 @@
+Explanation Video
+
+https://youtu.be/pmVpZPOEzyk
+
+Demo Video
+
+https://www.powtoon.com/online-presentation/bm3QL8QVUeN/?mode=movie#/
+
 Project Name
 
 Classroom UP
