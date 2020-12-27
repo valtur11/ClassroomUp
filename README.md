@@ -1,10 +1,10 @@
-Explanation Video
+Prototype Design
 
-https://youtu.be/pmVpZPOEzyk
+https://framer.com/share/Classroom-UP--3GEYrYSxt94H1qd38h3U/GlUyOXWWm
 
-Demo Video
+Prototype Video
 
-https://www.powtoon.com/online-presentation/bm3QL8QVUeN/?mode=movie#/
+
 
 Project Name
 
